@@ -4,7 +4,7 @@ from datetime import datetime
 
 def mongodb_import(j_file, season, grand_slam, tour):
     # Open json file
-    file = r'C:\Users\luntr\Desktop\python_venv_projects\flashscore_tennis\processed\Wimbledon\\' + j_file +'.json'
+    file = r'C:\Users\luntr\Desktop\python_venv_projects\flashscore_tennis\processed\\' + j_file +'.json'
     with open(file, 'r') as f:
         data = json.load(f)
         
@@ -23,5 +23,5 @@ def mongodb_import(j_file, season, grand_slam, tour):
         
     return print("Import successfully")
 	
-mongodb_import('ATP Wimbledon 2021', 2021, 'wimbledon', 'ATP Men')
-mongodb_import('WTA Wimbledon 2021', 2021, 'wimbledon', 'WTA Women')
+#mongodb_import('ATP Wimbledon 2021', 2022, 'Australian Open', 'ATP Men')
+mongodb_import('WTA Australian Open 2022', 2022, 'Australian Open', 'WTA Women')
